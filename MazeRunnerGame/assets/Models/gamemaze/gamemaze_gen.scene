@@ -1,0 +1,55 @@
+<scene exported_by="lenovo" formatVersion="1.0.1" export_time="1416869601.277315" previous_export_time="1416869523.832885" >
+  <nodes >
+    <node name="Mesh.001" >
+      <position z="-0.000000" y="-0.750000" x="0.000000" />
+      <rotation qx="0.000000" qz="-0.000000" qy="0.000000" qw="1.000000" />
+      <scale z="4.000000" y="0.800000" x="4.000000" />
+      <user_data name="size_y" type="int" value="10" />
+      <user_data name="size_x" type="int" value="10" />
+      <user_data name="size_z" type="int" value="1" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+      <entity meshFile="solution.mesh" physics_type="STATIC" friction_x="1.0" lock_trans_z="False" ghost="False" lock_trans_y="False" lock_trans_x="False" inertia_tensor="0.4000000059604645" lock_rot_y="False" mass="1.0" anisotropic_friction="False" name="solution" friction_y="1.0" actor="False" friction_z="1.0" damping_rot="0.18000000715255737" damping_trans="0.02539999969303608" mass_radius="1.0" lock_rot_z="False" velocity_max="0.0" velocity_min="0.0" lock_rot_x="False" />
+    </node>
+    <node name="Sphere.001" >
+      <position z="-2.481081" y="6.231115" x="4.580434" />
+      <rotation qx="0.021773" qz="-0.008122" qy="-0.349420" qw="0.936678" />
+      <scale z="0.235289" y="0.235289" x="0.235289" />
+      <game >
+        <sensors >
+          <sensor name="up" type="KEYBOARD" />
+          <sensor name="down" type="KEYBOARD" />
+          <sensor name="left" type="KEYBOARD" />
+          <sensor name="right" type="KEYBOARD" />
+        </sensors>
+        <actuators >
+          <actuator name="forward" type="MOTION" />
+          <actuator name="act" type="MOTION" />
+          <actuator name="turn right" type="MOTION" />
+          <actuator name="turnleft" type="MOTION" />
+        </actuators>
+      </game>
+      <entity meshFile="Sphere.001.mesh" physics_type="DYNAMIC" friction_x="1.0" lock_trans_z="False" ghost="False" lock_trans_y="False" lock_trans_x="False" inertia_tensor="0.009999999776482582" lock_rot_y="False" mass="1.0099600553512573" anisotropic_friction="False" name="Sphere.001" friction_y="1.0" actor="True" friction_z="1.0" damping_rot="0.7400000691413879" damping_trans="0.5080000162124634" mass_radius="0.48112034797668457" lock_rot_z="False" velocity_max="0.0" velocity_min="0.0" lock_rot_x="False" />
+      <node name="Camera" >
+        <position z="-2.417705" y="7.527334" x="4.712037" />
+        <rotation qx="0.664177" qz="0.130063" qy="-0.200675" qw="0.708296" />
+        <scale z="1.000000" y="1.000000" x="1.000000" />
+        <game >
+          <sensors />
+          <actuators />
+        </game>
+        <camera name="Camera.001" projectionType="perspective" fov="0.7012100452376576" >
+          <clipping near="0.0010000000474974513" farPlaneDist="100.0" nearPlaneDist="0.0010000000474974513" far="100.0" />
+        </camera>
+      </node>
+    </node>
+  </nodes>
+  <externals >
+    <item type="material" >
+      <file name="C:\Users\lenovo\Desktop\output\Material.TF.8706.material" />
+    </item>
+  </externals>
+  <environment />
+</scene>
